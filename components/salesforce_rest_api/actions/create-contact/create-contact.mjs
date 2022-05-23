@@ -18,7 +18,7 @@ export default {
     LastName: {
       type: "string",
       label: "LastName",
-      description: "Required. Last name of the contact up to 80 characters.",
+      description: "Last name of the contact up to 80 characters.",
     },
     selector: {
       propDefinition: [
@@ -42,7 +42,7 @@ export default {
       $,
       data,
     });
-    $.export("$summary", `Created contact "${this.LastName}"`);
+    $.export("$summary", `Successfully created contact "${this.LastName}"`);
     return response;
   },
 };
